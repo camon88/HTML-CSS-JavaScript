@@ -1,0 +1,161 @@
+body {
+background-image: url("http://upload.wikimedia.org/wikipedia/en/1/16/Appalachian_State_University_logo_2.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+
+h2 { 
+        width: 200px;
+        padding: 2px;
+        margin: 20px;
+        font-size: 1em;
+        font-family: "Arial", Arial, sans-serif;
+        font-weight: 100, bold;
+}
+
+h1 {    width: 475px;
+        padding: 25px;
+        border: 10px, #FF0000;
+        border-style: double;
+        margin: 25px;
+        background: rgba(255,0,0,0.1);
+        font-size 1.5em;
+        font-family: "Arial", Arial, sans-serif;
+        font-weight: 100;
+        color: darkred;
+        border-right-style: none;
+        border-left-style: none;
+}
+
+a: hover {font-weight: bold;
+          font-size: 25px;
+}
+
+p {
+       width: 200px;
+       padding: 2px;
+       margin: 20px;
+}
+span.optional {
+       color: red;
+}
+
+h3 { 
+        color: blue;
+}        
+    
+        
+div {
+     width: 340px;
+     padding: 30px;
+     border: 2px solid blue;
+     margin: 20px;
+     background-color: cyan;
+    }
+
+li + li + li {color: red;}
+
+a {text-decoration: none;
+   }
+
+a:hover {
+        font-weight: bold;
+        font-size: 20;
+}
+
+
+
+
+
+        
+<!doctype html>
+<html lang = "en">
+<head>
+        <meta charset="utf-8">
+        <title>Acme Sales - Order Form</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h2><a href = "http://compsci.appstate.edu"> Acme Sales </a> - Order Form </h2>
+        <form action="http://student.cs.appstate.edu/jw76577" method="get">
+        <ul>
+        <li><a href ="//student.cs.appstate.edu/jw76577/cs3440/workout/2015-09-24/"> Home</a></li>
+        <li><a href ="http://www.w3schools.com/html/"> html</a></li>
+        <li><a href ="http://www.w3schools.com/css/"> css</a></li>
+        <li><a href ="http://www.w3schools.com/js/">javaScript</a></li>
+        <li><a href ="http://www.w3schools.com/jquery/">jquery</a></li>
+        </ul>
+            <fieldset>
+                <legend>Name</legend>
+                <table>
+                    <tr>
+                        <td><label>First: </td><td><input type="text" name="firstName" value="" size="15" maxlength="25"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>Middle: </td><td><input type="text" name="middle" value="" size="15" maxlength="25"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>Last: </td><td><input type="text" name="last" value="" size="15" maxlength="25"></label></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Billing Address</legend>
+                <table>
+                    <tr>
+                        <td><label>Street: </td><td><input type="text" name="billingStreet" value="" size="15" maxlength="50"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>City: </td><td><input type="text" name="billingCity" value="" size="15" maxlength="50"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>State: </td><td><input type="text" name="billingState" value="" size="15" maxlength="25"></label></td>
+                    </tr>
+                    <tr>
+                        <td>Zip Code: </td><td><input type="text" name ="billingZip" value="" size="15" maxlength="25"></label></td>
+                        <td class ="zipCode">
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Shipping Address</legend>
+                <table>
+                    <tr>
+                        <td><label>Street: </td><td><input type="text" name="shipStreet" value="" size="15" maxlength="50"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>City: </td><td><input type="text" name="shipStreet" value="" size="15" maxlength="50"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>State: </td><td><input type="text" name="shipStreet" value="" size="15" maxlength="50"></label></td>
+                    </tr>
+                    <tr>
+                        <td>Zip Code: </td><td><input type="text" name="shipStreet" value="" size="15" maxlength="50"></label></td>
+                        <td class = "zipCode">
+                    </tr>
+                </table>
+            </fieldSet>
+            <fieldSet>
+                <legend>Phone</legend>
+                <table>
+                    <tr>
+                        <td><label for= "format">Home: </td><td><input type="text" name="homePhone" value="" size="15" maxlength="55"></label></td>
+                        <td class ="phoneNum">
+                    </tr>
+                    <tr>
+                        <td><label for = "format">Office: </td><td><input type="text" name="officePhone" value="" size=15" maxlength="55"></label></td>
+                        <td class ="phoneNum">
+                    </tr>
+                    <tr>
+                        <td><label for ="format">Mobile: </td><td><input type="text" name="mobilePhone" value="" size="15" maxlength="55"></label></td>
+                        <td class = "phoneNum">
+                    <tr>
+                </table>
+            </fieldSet>
+            <input type = "text" name = "salesperson" value = "Jonathan Ward">
+            <p><input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
+

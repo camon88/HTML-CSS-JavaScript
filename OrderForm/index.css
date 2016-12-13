@@ -1,0 +1,31 @@
+li {
+    display: inline;
+    padding-right: 10%;
+}
+
+.zipCode:after {
+    content: "Format: XXXX-XXX";
+}
+
+.phoneNum:after {
+    content: "Format: XXX-XXX-XXXX";
+}
+
+input:focus {
+    box-shadow: 2px 2px 2px lightblue;
+    background: #D3D3D3;
+}
+
+a:hover {
+    cursor: crosshair;
+    color: magenta;
+}
+
+input[name=salesperson] {
+    visibility: hidden;
+}
+
+ul {
+    background-color: #D3D3D3;
+    height: 30px;
+}

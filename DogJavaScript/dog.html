@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Dog Tricks</title>
+        <script src="dog.js">
+        </script>
+        <script src="//code.jquery.com/jquery-2.1.1.min.js">
+        </script>
+        <script src="dogInteraction.js">
+        </script>
+        <style>
+div {
+    background-color: lightgrey;
+    width: 600px;
+    padding: 25px;
+    border: 25px solid navy;
+    margin: 25px;
+}
+h1 {
+        padding-left: 1em;
+}
+</style>
+</head>
+<body>
+        <h1>Dog Tricks</h1>
+        <form>
+                <div><table>
+                        <tr>
+                                <td><label for="name">Name:</label></td>
+                                <td><input id="spotForName" name="spotForName"
+                                type="text"></td>
+                        </tr>
+                        <tr>
+                                <td>Birthday:</td>
+                                <td><input class="bDate" id="year" name="year"
+                                placeholder="YYYY" type="text"></td>
+                                <td><input class="bDate" id="month" name=
+                                "month" placeholder="MM" type="text"></td>
+                                <td><input class="bDate" id="day" name="day"
+                                placeholder="DD" type="text"></td>
+                        </tr>
+                        <tr>
+                                <td>Trick:</td>
+                                <td><select id="dogTricks" name="dogTricks">
+                                        <option selected="selected" value=
+                                        "idle">
+                                                Idle
+                                        </option>
+                                        <option value="sit">
+                                                Sit
+                                        </option>
+                                        <option value="fetch">
+                                                Fetch
+                                        </option>
+                                        <option value="shake">
+                                                Shake
+                                        </option>
+                                        <option value="down">
+                                                Down
+                                        </option>
+                                </select></td>
+                        </tr>
+                </table>
+        </form>
+        <h2>My dog...</h2>
+        <table>
+                <tr>
+                        <td>Name</td>
+                        <td id="dogNameSpot"></td>
+                </tr>
+                <tr>
+                        <td>Birthday</td>
+                        <td id="dogBdaySpot"></td>
+                </tr>
+                <tr>
+                        <td>Currently...</td>
+                        <td id="whatDogIsDoing"></td>
+                </tr>
+        </table></div>
+</body>
+</html>

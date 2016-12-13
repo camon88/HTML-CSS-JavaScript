@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang = "en">
+  
+   <head>
+      <meta charset="utf-8">
+      <title>Heat Index Table</title>
+      <script src="heatIndexTable.js"></script>
+      <style>
+     #heatIndexTable {
+        border-collapse: collapse;
+     }
+
+     #heatIndexTable td {
+        padding: 5px;
+        border: 3px solid grey;
+        width: 75px;
+     }
+      </style>
+   </head>
+
+   <body>
+      
+      <h1>Heat Index Table</h1>
+
+      <form>
+     
+     <table>
+        <tr>
+           <td><label for="minimumTemp">Min. Temperature</label></td>
+           <td><input type="text" id="minimumTemp" name="minimumTemp" value="80"></td>
+        </tr>
+        <tr>
+           <td><label for="maximumTemp">Max. Temperature</label></td>
+           <td><input type="text" id="maximumTemp" name="maximumTemp" value="110"></td>
+        </tr>
+        <tr>
+           <td><label for="minRelHum">Min. Relative Humidity</label></td>
+           <td><input type="text" id="minRelHum" name="minRelHum" value="40"></td>
+        </tr>
+        <tr>
+           <td><label for="maxRelHum">Max. Relative Humidity</label></td>
+           <td><input type="text" id="maxRelHum" name="maxRelHum" value="90"></td>
+        </tr>
+     </table>
+     
+     <button type="button" id="createButton">Create Heat Index Table</button>
+
+      </form>
+      
+      <br>
+
+      <div id="heatIndexDiv">
+     <table id="heatIndexTable">
+     </table>
+      </div>
+
+</body>
+</html>

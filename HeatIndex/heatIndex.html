@@ -1,0 +1,129 @@
+
+<!doctype html>
+<html lang="en">
+  
+   <head>
+      <meta charset="utf-8">
+      <title> </title>
+      <script src="heatIndex.js"></script>
+      <style>
+     table {
+        border-collapse: collapse;
+     }
+
+     td {
+        padding: 5px;
+        border: 3px solid grey;
+        width: 75px;
+     }
+      </style>
+   </head>
+
+   <body>
+      <table>
+     <caption><h4>Temperature (F) versus Relative Humidity (%)</h4></caption>
+
+     <tr>
+        <td>&deg;F</td>
+        <td>90%</td>
+        <td>80%</td>
+        <td>70%</td>
+        <td>60%</td>
+        <td>50%</td>
+        <td>40%</td>
+        <td>30%</td>
+     </tr>
+
+     <tr>
+        <td>70</td>
+        <td><script>document.write(heatIndex(70, 90));</script></td>
+        <td><script>document.write(heatIndex(70, 80));</script></td>
+        <td><script>document.write(heatIndex(70, 70));</script></td>
+        <td><script>document.write(heatIndex(70, 60));</script></td>
+        <td><script>document.write(heatIndex(70, 50));</script></td>
+        <td><script>document.write(heatIndex(70, 40));</script></td>
+        <td><script>document.write(heatIndex(70, 30));</script></td>
+     </tr>
+
+     <tr>
+        <td>80</td>
+        <td><script>document.write(heatIndex(80, 90));</script></td>
+        <td><script>document.write(heatIndex(80, 80));</script></td>
+        <td><script>document.write(heatIndex(80, 70));</script></td>
+        <td><script>document.write(heatIndex(80, 60));</script></td>
+        <td><script>document.write(heatIndex(80, 50));</script></td>
+        <td><script>document.write(heatIndex(80, 40));</script></td>
+        <td><script>document.write(heatIndex(80, 30));</script></td>
+     </tr>
+
+      <tr>
+        <td>85</td>
+        <td><script>document.write(heatIndex(85, 90));</script></td>
+        <td><script>document.write(heatIndex(85, 80));</script></td>
+        <td><script>document.write(heatIndex(85, 70));</script></td>
+        <td><script>document.write(heatIndex(85, 60));</script></td>
+        <td><script>document.write(heatIndex(85, 50));</script></td>
+        <td><script>document.write(heatIndex(85, 40));</script></td>
+        <td><script>document.write(heatIndex(85, 30));</script></td>
+     </tr>
+
+     <tr>
+        <td>90</td>
+        <td><script>document.write(heatIndex(90, 90));</script></td>
+        <td><script>document.write(heatIndex(90, 80));</script></td>
+        <td><script>document.write(heatIndex(90, 70));</script></td>
+        <td><script>document.write(heatIndex(90, 60));</script></td>
+        <td><script>document.write(heatIndex(90, 50));</script></td>
+        <td><script>document.write(heatIndex(90, 40));</script></td>
+        <td><script>document.write(heatIndex(90, 30));</script></td>
+     </tr>
+
+     <tr>
+        <td>95</td>
+        <td><script>document.write(heatIndex(95, 90));</script></td>
+        <td><script>document.write(heatIndex(95, 80));</script></td>
+        <td><script>document.write(heatIndex(95, 70));</script></td>
+        <td><script>document.write(heatIndex(95, 60));</script></td>
+        <td><script>document.write(heatIndex(95, 50));</script></td>
+        <td><script>document.write(heatIndex(95, 40));</script></td>
+        <td><script>document.write(heatIndex(95, 30));</script></td>
+     </tr>
+
+     <tr>
+
+        <td>100</td>
+        <td><script>document.write(heatIndex(100, 90));</script></td>
+        <td><script>document.write(heatIndex(100, 80));</script></td>
+        <td><script>document.write(heatIndex(100, 70));</script></td>
+        <td><script>document.write(heatIndex(100, 60));</script></td>
+        <td><script>document.write(heatIndex(100, 50));</script></td>
+        <td><script>document.write(heatIndex(100, 40));</script></td>
+        <td><script>document.write(heatIndex(100, 30));</script></td>
+     </tr>
+
+     <tr>
+        <td>105</td>
+        <td><script>document.write(heatIndex(105, 90));</script></td>
+        <td><script>document.write(heatIndex(105, 80));</script></td>
+        <td><script>document.write(heatIndex(105, 70));</script></td>
+        <td><script>document.write(heatIndex(105, 60));</script></td>
+        <td><script>document.write(heatIndex(105, 50));</script></td>
+        <td><script>document.write(heatIndex(105, 40));</script></td>
+        <td><script>document.write(heatIndex(105, 30));</script></td>
+     </tr>
+
+     <tr>
+        <td>110</td>
+        <td><script>document.write(heatIndex(110, 90));</script></td>
+        <td><script>document.write(heatIndex(110, 80));</script></td>
+        <td><script>document.write(heatIndex(110, 70));</script></td>
+        <td><script>document.write(heatIndex(110, 60));</script></td>
+        <td><script>document.write(heatIndex(110, 50));</script></td>
+        <td><script>document.write(heatIndex(110, 40));</script></td>
+        <td><script>document.write(heatIndex(110, 30));</script></td>
+     </tr>
+      </table>
+   </body>
+
+</html>
+

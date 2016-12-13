@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title>Sample Contacnt Form</title>
+</head>
+
+<body>
+
+<h1> Sample Contact Form </h1>
+<p></p>
+
+<p>What is the topic of your message?</p>
+<form method="get" action="http://student.cs.appstate.edu/crr/3440/homework/h3/contact/">
+<label>
+<input type="radio" name="regarding" value="performers" checked> Performers
+<input type="radio" name="regarding" value="venue" checked>Venue
+<input type="radio" name="regarding" value="vendors" checked>Vendors
+<input type="radio" name="regarding" value="volunteers" checked>Volunteers
+<input type="radio" name="regarding" value="sponsers" checked>Sponsers
+<input type="radio" name="regarding" value="lodging" checked>Lodging
+<input type="radio" name="regarding" value="other" checked>Other
+</label>
+<p></p>
+<fieldset>
+<table border="0">
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone:</label</td>
+                <td><input type="tel" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="date">Date:</label></td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td><label for="role">Your Role:</label></td>
+                <td>
+                    <select name="role">
+                        <option value="patron">Patron</option>
+                        <option value="vendor">Vendor</option>
+                        <option value="employee">Employee</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="performer">Performer</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+</table>
+</fieldset>
+
+<p><label for="message">Message:</label></p>
+        <textarea name="message" rows="10" cols="80">Please write your comments/questions 
+here.</textarea><br/>
+        <input type="submit" name="btnsubmit" value="Send Message">
+        <input type="reset" name="btnreset" value="Clear Form">
+        <input type="hidden" name="source" value="webform">
+        </form>
+
+
+<p>http://student.cs.appstate.edu/crr/3440/homework/h3/contact/?regarding=venue&name=sadf&email=sadf%40gmail.com&phone=sadf&date=1988-03-03&role=patron&message=Please+write+your+comments%2Fquestions+%0D%0Ahere.asdfasdfsdafasdf&btnsubmit=Send+Message&source=webform</p>
+<p></p>
+<p>Starting with the student.cs.appstate.edu/crr/3440/homework/h3/contact is the given 
+page that will respond with a page that echoes back the values that were passed as post data.
+Although, I am actually describing the URL for the get data. The rest of the URL is just the 
+data I selected when filling out the form verbatim. It shows every option from the "regarding" choice
+to the Name, Email, Phone, Data, Your Role, and Message entered. This seems to be a very
+inappropriate way of submitting data.</p>
+</html>
+    </body>
+</html>

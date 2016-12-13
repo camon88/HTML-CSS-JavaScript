@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weather Conditions</title>
+    <style>
+    .tableRowClass {
+    background-color: grey;
+    }
+
+    #reload {
+    border-radius: 15px;
+    color: #000000;
+    font-size: 15px;
+    background: #ffffff;
+    border: solid
+    }
+
+    td {
+    width: 175px;
+    }
+
+    table {
+    border-collapse: collapse;
+    }
+    </style>
+    <script src="conditions.js">
+    </script>
+</head>
+<body>
+    <h3>Current Weather Conditions</h3>
+    <table>
+        <tr>
+            <td>Location</td>
+            <td>Boone, NC</td>
+        </tr>
+        <tr class="tableRowClass">
+            <td>Date</td>
+            <td id="date"></td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td id="time"></td>
+        </tr>
+        <tr class="tableRowClass">
+            <td>Temperature</td>
+            <td id="temp"></td>
+        </tr>
+      
+    <tr>
+     <td>Today's High</td>
+      <td><span id="high"></span>&deg;F</td>
+      </tr>
+      <tr class = "tableRowClass">
+     <td>Today's Low</td>
+     <td><span id="low"></span>&deg;F</td>
+      </tr>
+       <tr>
+            <td>Humidity</td>
+            <td id="humidity"></td>
+        </tr>
+        <tr class="tableRowClass">
+            <td>Wind Speed</td>
+            <td id="wind"></td>
+        </tr>
+    </table><br>
+    <button id="reload" type="button">Refresh Conditions</button>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+body {
+background-image: url("http://upload.wikimedia.org/wikipedia/en/1/16/Appalachian_State_University_logo_2.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+
+h2 { 
+        width: 200px;
+        padding: 2px;
+        margin: 20px;
+        font-size: 1em;
+        font-family: "Arial", Arial, sans-serif;
+        font-weight: 100, bold;
+}
+
+h1 {    width: 475px;
+        padding: 25px;
+        border: 10px, #FF0000;
+        border-style: double;
+        margin: 25px;
+        background: rgba(255,0,0,0.1);
+        font-size 1.5em;
+        font-family: "Arial", Arial, sans-serif;
+        font-weight: 100;
+        color: darkred;
+        border-right-style: none;
+        border-left-style: none;
+}
+
+a: hover {font-weight: bold;
+          font-size: 25px;
+}
+
+p {
+       width: 200px;
+       padding: 2px;
+       margin: 20px;
+}
+span.optional {
+       color: red;
+}
+
+h3 { 
+        color: blue;
+}        
+    
+        
+div {
+     width: 340px;
+     padding: 30px;
+     border: 2px solid blue;
+     margin: 20px;
+     background-color: cyan;
+    }
+
+li + li + li {color: red;}
+
+a {text-decoration: none;
+   }
+
+a:hover {
+        font-weight: bold;
+        font-size: 20;
+}
+
+
+
+
+
+        

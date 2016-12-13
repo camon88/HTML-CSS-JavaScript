@@ -1,0 +1,47 @@
+p {
+    text-shadow : 6px 6px 6px gray;
+}
+
+p#first {
+    font-family : comicSans, "comic sans ms", sans-serif;
+    font-size : 175%;
+    text-align : center;
+    font-weight : bold, 150;
+    color : blue;
+    letter-spacing : -2px;
+    text-transform : uppercase; 
+     
+}
+
+p#second {
+     font-family : comicSans, "comic sans ms", sans-serif;
+     font-size : 175%;
+     text-align : center;
+     font-weight: bolder, 900;
+     font-stretch: expanded;
+     color: black;
+     text-shadow : 1px 1px 4px black;
+     letter-spacing : 20%;
+}
+     
+span[go] {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: green;
+    background-color: red;
+
+}
+span~span {
+    text-transform : capitalize;
+}
+span {
+    font-weight : bold;
+}
+span > span { 
+    font-weight : normal;
+}
+
+body {
+    background-color: lightgray;
+}
+
